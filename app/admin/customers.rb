@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 ActiveAdmin.register Customer do
-  permit_params :full_name, :phone_number, :email, :notes
+  permit_params :full_name, :phone_number, :email, :notes, :image
 
   form do |f|
     f.semantic_errors # shows errors on :base

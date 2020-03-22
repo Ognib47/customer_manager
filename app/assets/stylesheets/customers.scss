@@ -1,3 +1,23 @@
 // Place all the styles related to the customers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.flexit {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+.container {
+  width: 250px;
+  border: 1pt solid black;
+}
+
+.inner {
+  margin-left: 50px;
+}
+
+.image {
+  height: 300px;
+  width: 150px;
+}

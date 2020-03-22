@@ -10,9 +10,13 @@
         <%= image_tag customer.image, class: 'image' %>
       <% end %>
       <div>
-        <p>
-          <%= customer.email %>
-        </p>
+        <% if customer.email.nil? %>
+          <p>
+            no email
+          </p>
+        <% else%>
+          <p> <%= customer.email %> </p>
+        <% end %>
         <p>
           <%= customer.phone_number %>
         </p>
